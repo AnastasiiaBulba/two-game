@@ -43,15 +43,18 @@
   }
 
   .wrapper-button {
-    left: 0;
+    // left: 0;
     width: 100%;
     transform: translateY(-50%);
-    display: block;
+    // display: block;
+    display: flex;
     text-align: center;
     margin-top: 26px;
     position: absolute;
     pointer-events: none;
     z-index: 100;
+    justify-content: space-between;
+    padding: 0 20px;
   }
 
   .swiper-button-prev {
@@ -61,6 +64,9 @@
     right: 42px;
     justify-content: center;
     pointer-events: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .swiper-button-next {
@@ -70,6 +76,9 @@
     right: 42px;
     justify-content: center;
     pointer-events: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .swiper-button-prev,
