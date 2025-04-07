@@ -1,18 +1,52 @@
-@import './header.scss';
-@import './vite-promo.scss';
+@import "./modal.scss";
+@import "./about.scss";
+@import "./advantages.scss";
+@import "./footer.scss";
+@import "./gallery.scss";
+@import "./game.scss";
+@import "./hero.scss";
+@import "./player.scss";
+@import "./header.scss";
+
+@import "./common/reset";
+@import "./common/mixins";
+@import "./common/breakpoints";
+@import "./common/vars";
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
+  color: $_text;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: $_backg;
+}
+
+.container {
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.is-hidden {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1440px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-bottom: 130px;
+  }
 }

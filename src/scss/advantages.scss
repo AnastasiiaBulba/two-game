@@ -1,0 +1,135 @@
+@import "./common/vars";
+
+.advantages {
+  margin-bottom: 80px;
+}
+
+.advantages-title {
+  font-family: "Chewy", sans-serif;
+  margin-bottom: 22px;
+  font-weight: 400;
+  font-size: 38px;
+  text-align: center;
+  color: $_title_h2;
+}
+
+.advantages-wrap-cont-one {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-wrap-img-one {
+  border-radius: 20px;
+  width: 335px;
+  height: 149px;
+}
+
+.advantages-wrap-parag-one {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 20px;
+  padding: 10px;
+  width: 335px;
+  background: $_footer;
+}
+
+.advantages-wrap-span-one {
+  font-weight: 700;
+}
+
+.advantages-wrap-cont {
+  display: none;
+}
+
+.advantages-candy-left-img {
+  display: none;
+}
+
+.advantages-candy-right-img {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .advantages {
+    margin-bottom: 130px;
+  }
+
+  .advantages-container {
+    position: relative;
+  }
+
+  .advantages-wrap-dop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .advantages-bottom-wrap-two {
+    display: flex;
+    justify-content: center;
+    gap: 21px;
+  }
+
+  .advantages-bottom-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 21px;
+  }
+
+  .advantages-wrap-img-one {
+    width: 413px;
+    height: 183px;
+  }
+
+  .advantages-wrap-img {
+    width: 413px;
+    height: 183px;
+  }
+
+  .advantages-wrap-parag {
+    width: 413px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 20px;
+    padding: 21px;
+    background: $_footer;
+  }
+
+  .advantages-wrap-parag-one {
+    width: 413px;
+    padding: 21px;
+  }
+
+  .advantages-wrap-span {
+    font-weight: 700;
+  }
+
+  .advantages-wrap-cont {
+    display: block;
+  }
+
+  .advantages-candy-left-img {
+    display: block;
+    top: 360px;
+    left: -100px;
+    position: absolute;
+    object-fit: cover;
+    z-index: 998;
+  }
+
+  .advantages-candy-right-img {
+    display: block;
+    transform: scaleX(-1);
+    top: 360px;
+    right: -100px;
+    position: absolute;
+    z-index: 997;
+  }
+}

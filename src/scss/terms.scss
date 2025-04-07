@@ -1,0 +1,64 @@
+@import "./common/vars";
+
+.terms-header {
+  display: none;
+}
+
+.terms-wrapper {
+  margin-bottom: 58px;
+}
+
+.terms-btn {
+  all: unset;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 38px;
+  margin-left: 280px;
+}
+
+.terms-title {
+  font-family: "Chewy", sans-serif;
+  font-weight: 400;
+  font-size: 38px;
+  text-align: center;
+  color: $_title_h2;
+  padding-top: 85px;
+  margin-bottom: 28px;
+}
+
+.terms-parag-one {
+  padding-bottom: 30px;
+}
+
+.terms-list-ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-decoration: underline;
+}
+
+.terms-title-parag {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.terms-mail {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1440px) {
+  .terms-img-btn {
+    display: none;
+  }
+
+  .terms-header {
+    display: none;
+  }
+
+  .terms-wrapper {
+    margin-bottom: 100px;
+  }
+}

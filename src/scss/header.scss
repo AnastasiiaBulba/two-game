@@ -1,30 +1,30 @@
+@import "./common/vars";
+
 .header {
-  padding: 20px 0;
+  display: none;
+  background-color: rgba($_backg, 0.8);
 }
 
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-
-  @include media(tablet) {
-    justify-content: flex-start;
+@media screen and (min-width: 1440px) {
+  .header {
+    display: block;
+    width: 100%;
+    max-width: 1440px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
   }
-
-  @include media(desktop) {
-    justify-content: flex-end;
+  .nav {
+    display: flex;
+    width: 1280px;
+    margin: 0 auto;
   }
-}
-
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  @include font(30, 40);
-  color: $_header_color;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: $_header_accent_color;
+  .nav-list {
+    display: flex;
+    padding: 26px 0 36px 0;
+    justify-content: space-between;
+    width: 100%;
+  }
 }

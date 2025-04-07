@@ -1,0 +1,70 @@
+.hero {
+  background-image: url("../img/hero-1x-mob.png");
+  background-size: cover;
+  background-position: center;
+  width: 375px;
+  height: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.hero-wrapper {
+  margin: 0 auto;
+  margin-top: 224px;
+}
+
+.hero-burger {
+  all: unset;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 38px;
+  right: 34px;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-top img {
+  width: 335px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.hero-btn img {
+  width: 243px;
+  height: auto;
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+}
+
+.hero-btn img:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    background-image: url("../img/hero-0.5x-desk.png");
+    width: 1440px;
+    height: 720px;
+    margin-top: 85px;
+    margin-bottom: 130px;
+  }
+
+  .hero-wrapper {
+    margin-top: 55px;
+  }
+
+  .hero-burger {
+    display: none;
+  }
+
+  .hero-top img {
+    width: 725px;
+    margin-bottom: 4px;
+  }
+}

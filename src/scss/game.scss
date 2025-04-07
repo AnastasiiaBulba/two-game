@@ -1,0 +1,102 @@
+@import "./common/vars";
+
+.game {
+  margin-bottom: 80px;
+}
+
+.game-container {
+  position: relative;
+}
+
+.game-title {
+  font-family: "Chewy", sans-serif;
+  margin-bottom: 22px;
+  font-weight: 400;
+  font-size: 38px;
+  text-align: center;
+  color: $_title_h2;
+}
+
+.game-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-wrap-text {
+  order: 1;
+}
+
+.game-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.game-li {
+  display: flex;
+  gap: 8px;
+}
+
+.game-li-img {
+  width: 54px;
+  height: 53px;
+}
+
+.game-li-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.game-li-text-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  color: $_title_h5;
+}
+
+.game-wrap-img {
+  order: 0;
+  width: 375px;
+  margin-left: -20px;
+  margin-bottom: 22px;
+}
+
+.game-little-candy-img {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .game-wrap {
+    flex-direction: row;
+    gap: 125px;
+    padding-left: 111px;
+  }
+
+  .game-wrap-text {
+    order: 0;
+    width: 434px;
+  }
+
+  .game-li-text-title {
+    line-height: 1;
+  }
+
+  .game-wrap-img {
+    order: 1;
+    padding-top: 54px;
+    width: 630px;
+  }
+
+  .game-little-candy-img {
+    display: block;
+    margin-right: 80px;
+    margin-top: 30px;
+    position: absolute;
+    bottom: -253px;
+    right: -200px;
+    object-fit: cover;
+    transform: rotate(315deg);
+    z-index: 999;
+  }
+}
