@@ -1,10 +1,7 @@
-@import "./common/vars";
+@import './common/vars';
 
 .gallery {
   margin-bottom: 80px;
-}
-
-.container {
 }
 
 .gallery-container {
@@ -12,7 +9,7 @@
 }
 
 .gallery-title {
-  font-family: "Chewy", sans-serif;
+  font-family: 'Chewy', sans-serif;
   margin-bottom: 22px;
   font-weight: 400;
   font-size: 38px;
@@ -20,18 +17,9 @@
   color: $_title_h2;
 }
 
-.swiper {
-}
-
-.reviewsSwiper {
-}
-
 .swiper-wrapper {
   display: flex;
-  //   gap: 20px;
-
   width: 100%;
-  //   justify-content: center;
 }
 
 .swiper-slide {
@@ -55,15 +43,12 @@
   }
 
   .wrapper-button {
-    // top: 50%;
     left: 0;
     width: 100%;
     transform: translateY(-50%);
-
     display: block;
     text-align: center;
     margin-top: 26px;
-
     position: absolute;
     pointer-events: none;
     z-index: 100;
@@ -74,7 +59,6 @@
     cursor: pointer;
     width: 42px;
     right: 42px;
-    // width: 100%;
     justify-content: center;
     pointer-events: auto;
   }
@@ -82,16 +66,9 @@
   .swiper-button-next {
     all: unset;
     cursor: pointer;
-    // width: 42px;
-    // right: 42px;
     width: 100%;
     justify-content: center;
     pointer-events: auto;
-  }
-
-  .swiper-button-next-img {
-    // width: 42px;
-    // right: 42px;
   }
 
   .swiper-button-prev::after,

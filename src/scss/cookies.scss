@@ -1,7 +1,7 @@
-@import "./common/vars";
+@import './common/vars';
 
 .is-hidden {
-  // background: none;
+  background: none;
   display: none;
 }
 
@@ -12,10 +12,14 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   z-index: 999;
+}
+
+.backdrop:not(.is-hidden) {
+  display: flex;
 }
 
 .modal {
@@ -56,7 +60,6 @@
   transform-origin: center;
 }
 
-// своє
 .cookies-header {
   display: none;
 }
@@ -75,7 +78,7 @@
 }
 
 .cookies-title {
-  font-family: "Chewy", sans-serif;
+  font-family: 'Chewy', sans-serif;
   font-weight: 400;
   font-size: 38px;
   text-align: center;
@@ -122,7 +125,7 @@
 }
 
 .cookies-parag-ul li::before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 4px;
   height: 1px;

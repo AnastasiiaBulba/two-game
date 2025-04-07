@@ -1,7 +1,8 @@
-@import "./common/vars";
+@import './common/vars';
 
 .is-hidden {
   background: none;
+  display: none;
 }
 .backdrop {
   position: fixed;

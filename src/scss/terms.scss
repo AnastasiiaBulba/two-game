@@ -1,4 +1,64 @@
-@import "./common/vars";
+@import './common/vars';
+
+.is-hidden {
+  background: none;
+  display: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.backdrop:not(.is-hidden) {
+  display: flex;
+}
+
+.modal {
+  background: $_backg;
+  width: 375px;
+  height: 100%;
+  display: flex;
+  top: 0;
+  right: 0;
+  flex-direction: column;
+  padding-top: 194px;
+  padding-left: 94px;
+  position: relative;
+}
+
+.back-button {
+  all: unset;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 38px;
+  right: 34px;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.modal-img {
+  margin-left: 80px;
+  margin-top: 30px;
+  object-fit: cover;
+  transform: rotate(315deg);
+  transform-origin: center;
+}
 
 .terms-header {
   display: none;
@@ -18,7 +78,7 @@
 }
 
 .terms-title {
-  font-family: "Chewy", sans-serif;
+  font-family: 'Chewy', sans-serif;
   font-weight: 400;
   font-size: 38px;
   text-align: center;

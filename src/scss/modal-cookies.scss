@@ -1,0 +1,78 @@
+@import './common/vars';
+
+.is-hidden {
+  display: none;
+}
+
+.modal-cookies {
+  width: 374px;
+  height: 412px;
+  display: flex;
+  flex-direction: column;
+  background-color: $_backg;
+  text-align: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+}
+
+.modal-cookies-text-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-cookies-text {
+  width: 332px;
+}
+
+.modal-cookies-accept {
+  all: unset;
+  cursor: pointer;
+  border-radius: 40px;
+  width: 295px;
+  height: 78px;
+  background-color: $_text;
+  color: $_backg;
+  margin-top: 24px;
+}
+
+.modal-cookies-decline {
+  all: unset;
+  cursor: pointer;
+  border-radius: 40px;
+  width: 295px;
+  height: 78px;
+  background-color: $_backg;
+  color: $_text;
+  border: 1px solid #00131c;
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 1440px) {
+  .modal-cookies {
+    width: 1440px;
+    height: 118px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .modal-cookies-text-wrap {
+    margin-right: 180px;
+    margin-top: 34px;
+  }
+
+  .modal-cookies-text {
+    width: 595px;
+  }
+
+  .modal-cookies-accept {
+    margin-right: 26px;
+    margin-top: 20px;
+  }
+
+  .modal-cookies-decline {
+    margin-top: 20px;
+  }
+}
