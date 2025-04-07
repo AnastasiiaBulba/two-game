@@ -66,11 +66,18 @@
   .swiper-button-next {
     all: unset;
     cursor: pointer;
-    width: 100%;
+    width: 42px;
+    right: 42px;
     justify-content: center;
     pointer-events: auto;
   }
 
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-10%);
+  }
   .swiper-button-prev::after,
   .swiper-button-next::after {
     content: none !important;
