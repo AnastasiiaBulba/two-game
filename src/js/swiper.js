@@ -1,17 +1,17 @@
-import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
-let swiperReviews = new Swiper(".reviewsSwiper", {
+let swiperReviews = new Swiper('.reviewsSwiper', {
   modules: [Navigation, Pagination],
-  slidesPerView: 1,
+  slidesPerView: 1.2,
   spaceBetween: 20,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
   allowTouchMove: true,
   breakpoints: {

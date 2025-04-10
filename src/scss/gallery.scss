@@ -4,6 +4,10 @@
   margin-bottom: 80px;
 }
 
+.reviewsSwiper {
+  padding-right: 20px;
+}
+
 .gallery-container {
   position: relative;
 }
@@ -18,8 +22,14 @@
 }
 
 .swiper-wrapper {
-  display: flex;
-  width: 100%;
+  // display: flex;
+  // width: 100%;
+  width: 85vw;
+  max-width: 305px;
+  height: auto;
+  // aspect-ratio: 305 / 542;
+  box-sizing: border-box;
+  border-radius: 20px;
 }
 
 .swiper-slide {
@@ -42,6 +52,16 @@
     margin-bottom: 130px;
   }
 
+  .reviewsSwiper {
+    padding-right: 0;
+  }
+
+  .swiper-slide {
+    width: 305px;
+    height: 542px;
+    aspect-ratio: unset;
+  }
+
   .wrapper-button {
     // left: 0;
     width: 100%;
@@ -61,7 +81,7 @@
     all: unset;
     cursor: pointer;
     width: 42px;
-    right: 42px;
+    left: 42px;
     justify-content: center;
     pointer-events: auto;
     display: flex;

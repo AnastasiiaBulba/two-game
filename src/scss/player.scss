@@ -1,11 +1,11 @@
-@import "./common/vars";
+@import './common/vars';
 
 .player {
   margin-bottom: 80px;
 }
 
 .player-title {
-  font-family: "Chewy", sans-serif;
+  font-family: 'Chewy', sans-serif;
   margin-bottom: 22px;
   font-weight: 400;
   font-size: 38px;
@@ -14,8 +14,13 @@
 }
 
 .player-wrap-mob {
+  // display: flex;
+  // flex-direction: column;
+  // gap: 22px;
   display: flex;
+  justify-content: center;
   flex-direction: column;
+  align-items: center;
   gap: 22px;
 }
 

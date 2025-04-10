@@ -1,16 +1,21 @@
-@import "./common/vars";
+@import './common/vars';
 
 .about {
   margin-bottom: 74px;
 }
 
 .about-title {
-  font-family: "Chewy", sans-serif;
+  font-family: 'Chewy', sans-serif;
   font-weight: 400;
   font-size: 38px;
   text-align: center;
   color: $_title_h2;
   margin-bottom: 28px;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .about-wrap-one {

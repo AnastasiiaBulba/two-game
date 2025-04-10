@@ -1,16 +1,21 @@
-@import "./common/vars";
+@import './common/vars';
 
 .advantages {
   margin-bottom: 80px;
 }
 
 .advantages-title {
-  font-family: "Chewy", sans-serif;
+  font-family: 'Chewy', sans-serif;
   margin-bottom: 22px;
   font-weight: 400;
   font-size: 38px;
   text-align: center;
   color: $_title_h2;
+}
+
+.advantages-wrap-dop {
+  display: flex;
+  justify-content: center;
 }
 
 .advantages-wrap-cont-one {
